@@ -1,7 +1,4 @@
 #run_analysis.R
-#Kathy Ashenfelter
-#Getting and Cleaning Data
-# July 2017
 #install.packages("dplyr")
 #install.packages("data.table")
 #Load packages
@@ -9,9 +6,8 @@ library(data.table)
 library(dplyr)
 
 #Set your working directory
-setwd("C:/Users/ashenfkt/Google Drive/Dashboard/R_April2017/PhoenixRising/Coursera")
+setwd("D:\R Projects\WEEK 4\UCI HAR Dataset")
 
-#Download UCI data files from the web, unzip them, and specify time/date settings
 URL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 destFile <- "CourseDataset.zip"
 if (!file.exists(destFile)){
